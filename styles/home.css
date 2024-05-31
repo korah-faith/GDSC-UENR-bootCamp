@@ -213,29 +213,47 @@ button.arrowjet {
   color: #ffd700;
   background-color: #001f3f;
   margin-left: 250px;
-  margin-top: 250px;
+  margin-top: 10px;
   opacity: 0.99;
   font-weight: 900;
   font-family: "poppins";
 }
 
+.down-cv,
+.barge {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
 .down-cv {
   position: absolute;
   justify-content: center;
   display: flex;
   width: 100%;
-  opacity: 1;
+}
+
+.barge a img {
+  position: absolute;
+  margin-top: 90px;
+  width: 80px;
+  margin-left: -42px;
+  transition: all 0.3s;
+}
+
+.barge:hover {
+  transform: translate(-10px);
 }
 
 .down-cv a button {
   cursor: progress;
   border: none;
-  background-color: #03223d;
+  background-color: #052c53;
 
   opacity: 1;
   width: 160px;
   height: 50px;
-  color: #ffffff;
+  color: #ffff;
   font-size: 20px;
   font-weight: 900;
   /* padding: 10px; */
@@ -265,9 +283,9 @@ button.arrowjet {
 }
 
 .down-cv a button:hover {
-  background-color: #e38a05;
+  background-color: transparent;
 
-  color: #ffffff;
+  color: #fa0688;
   animation: hover 0.5s 0.3s forwards infinite ease-in-out;
   transition: all 0.3s;
 }
